@@ -1093,4 +1093,7 @@ void drm_connector_list_iter_end(struct drm_connector_list_iter *iter);
 #define drm_for_each_connector_iter(connector, iter) \
 	while ((connector = drm_connector_list_iter_next(iter)))
 
+
+extern int drm_create_virtual_connector(struct drm_device *dev);
+
 #endif

@@ -45,6 +45,9 @@ drm_kms_helper-$(CONFIG_DRM_DP_AUX_CHARDEV) += drm_dp_aux_dev.o
 obj-$(CONFIG_DRM_KMS_HELPER) += drm_kms_helper.o
 obj-$(CONFIG_DRM_DEBUG_MM_SELFTEST) += selftests/
 
+drm_vencoder-y := drm_virtual_encoder.o
+obj-$(CONFIG_DRM_VIRT_ENCODER) += drm_vencoder.o
+
 obj-$(CONFIG_DRM)	+= drm.o
 obj-$(CONFIG_DRM_MIPI_DSI) += drm_mipi_dsi.o
 obj-$(CONFIG_DRM_ARM)	+= arm/
